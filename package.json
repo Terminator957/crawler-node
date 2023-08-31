@@ -1,0 +1,33 @@
+{
+  "name": "crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.ts",
+    "test": "nodemon ./src/controller/LoginController.ts",
+    "demo": "nodemon ./src/demo.ts",
+    "build": "tsc"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "data/*",
+      ".git/*"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/cookie-session": "^2.0.44",
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.4.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cookie-session": "^2.0.0",
+    "express": "^4.18.2",
+    "reflect-metadata": "^0.1.13"
+  }
+}
